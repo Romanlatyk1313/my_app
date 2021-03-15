@@ -1,0 +1,14 @@
+.message a{
+    text-decoration: none;
+    color: white;
+}
+.message a::before{
+    content: 'w';
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: aqua;
+}
+.message a .active{
+    color: black;
+}

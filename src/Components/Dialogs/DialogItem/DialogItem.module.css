@@ -1,0 +1,15 @@
+
+
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
+.item a.active{
+    color: #fff;
+}
+.item img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
