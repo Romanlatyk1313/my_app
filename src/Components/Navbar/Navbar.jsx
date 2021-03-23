@@ -1,18 +1,9 @@
 import React from 'react';
 import s from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
-import FriendsItem from "./FriendsItem/FriendsItem";
 
+const Navbar = (props) => {
 
-class Navbar extends React.Component {
-    constructor(props) {
-        super(props);
-       this.nameElements = this.props.nameNavbar.map(n => <FriendsItem id={n.id} key={n.id} name={n.name}/>)
-
-    }
-
-
-    render() {
         return(
             <nav className={s.nav}>
                 <div className={s.item} >
@@ -38,13 +29,11 @@ class Navbar extends React.Component {
                     <NavLink to='/users' activeClassName={s.active}>Users</NavLink>
                 </div>
                 <div className={s.friends}>
-                    {this.nameElements}
+                    {props.nameElements}
                 </div>
-
-
             </nav>
         );
-    }
+
  }
  
       export default Navbar;
